@@ -1,1 +1,0 @@
-这就是一个自己的ionic的demo程序。用来学习ionic。
