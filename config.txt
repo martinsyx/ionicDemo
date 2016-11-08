@@ -1,0 +1,43 @@
+首先要安装环境
+
+1、安装node-v0.10.38-x64.msi版本（从nodejs中下载最稳定版本，最后安装ionic安不上，然后又安装node-v0.10.38-x64.msi，再安装ionicok了。不知道是不版本的原因，最后再升级到新版本就ok了）
+
+2、安装android sdk（installer_r24.1.2-windows.exe版本，必须在安装cordova之前安装android sdk，
+不然后面进行cordova 命令时，报错误。。。。）
+注意更新sdk或者安装虚拟机时请用管理员身份启动，不然有时会报错权限错误
+启动avd，创建虚拟机（报错Intel haxm没有启动。则需要安装intelhaxm-android.exe ）
+
+2.1确认你的处理器是否是Intel的，如果是AMD那就无法安装，如果是Intel的，再确认是否支持VT，根据你的处理器型号搜索一下
+2.2如果处理器是Intel的且支持VT，在开机时进入BIOS界面，不同的品牌进入BIOS的方法各不相同，通常是F1/F12/delete些，将Intel Virtualization Technology开启
+
+3、npm install -g ionic cordova （此处安装很费劲，，，，如果安装不上，直接使用国内镜像）
+也可以安装cnpm，这样就容易装cordova和ionic
+npm install -g cordova --registry https://registry.npm.taobao.org
+npm install -g ionic --registry https://registry.npm.taobao.org
+
+安装ionic2的话需要  npm install -g ionic@beta --registry https://registry.npm.taobao.org
+
+然后创建项目
+
+ionic start 【项目名】  【初始组件名】
+
+ionic start myApp tabs
+
+要用到ionic2 的话需要加参数 --v
+
+$ ionic start MyIonic2Project tutorial --v2
+
+
+echo "# testreactItem" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/martinsyx/ionicDemo.git
+git push -u origin master
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/martinsyx/ionicDemo.git
+git push -u origin master
+
+…or import code from another repository
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
